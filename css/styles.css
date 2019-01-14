@@ -55,7 +55,7 @@ div[class^="t"]{
     transition: 0.2s; ease-in-out; */
 }
 
-/* div[class^="B"]{
+div[class^="B"]{
     background-color: blue;
     width: 9vw;
     min-width: 120px;
@@ -65,7 +65,7 @@ div[class^="t"]{
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-  } */
+  }
 
 
 div[class^="tW"]{animation: autoreveal 8s 1s  infinite;}
