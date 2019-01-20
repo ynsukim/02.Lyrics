@@ -5,16 +5,25 @@
   src: url('font/PFDin-Regular5.eot') format('embedded-opentype');
 }
 
-body{ margin: 0px; font: 1.25em 'PFDin'}
+body{ margin: 0px; font: 2vh 'PFDin'; background-color: black;
+    display:flex; align-items: center;}
 div { box-sizing: border-box;}
 
-
-
-.wrapper {
-    /* background-color: lightgreen;  /*TESTER-*/ */
+.bodyAligner{
     width:100vw;
     height:100vh;
     display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.wrapper {
+    /* background-color: lightgreen;  /*TESTER-*/ */
+    height:90vh;
+    display:flex;
+    align-items: flex-start;
+
 }
 .columns {
     /* background-color:yellow; /*TESTER-*/ */
@@ -36,15 +45,16 @@ div { box-sizing: border-box;}
     margin: 0.5vh 0;
     display: table;
     position: relative;
-        color:red;
+    color:red;
+    display:flex;
+    align-items: center;
 }
 .cell>p{
     display: table-cell;
     vertical-align: middle
-
 }
 div[class^="t"]{
-    background-color: rgba(00, 00, 00, 1.0);
+    background-color: #ffffff;
     position:absolute;
     width: 9vw;
     min-width: 120px;
@@ -53,10 +63,11 @@ div[class^="t"]{
     right:0;
     top:25%;
     transition: 0.2s; ease-in-out; */
+    opacity: 0.4;
 }
 
-div[class^="B"]{
-    background-color: blue;
+div[class="Blnk"]{
+    background-color: #ffffff;
     width: 9vw;
     min-width: 120px;
     height: 2vh;
@@ -110,30 +121,30 @@ div.tWork:hover { width:5vw; min-width: 50px; background-color: red;}
 
 @keyframes autoreveal {
     7%{ width:4vw; min-width: 50px; background-color: green;}
-    14% {width:9vw; min-width: 120px; background-color: black;}
-    100% {width:9vw; min-width: 120px; background-color: black;}
+    14% {width:9vw; min-width: 120px; background-color: white;}
+    100% {width:9vw; min-width: 120px; background-color: white;}
 }
 
 @keyframes autoreveal2 {
     5%{ width:6vw; min-width: 50px; background-colored: green;}
-    10% {width:9vw; min-width: 120px; background-color: black;}
-    100% {width:9vw; min-width: 120px; background-color: black;}
+    10% {width:9vw; min-width: 120px; background-color: white;}
+    100% {width:9vw; min-width: 120px; background-color: white;}
 }
 
 @keyframes autoreveal3 {
     5%{ width:6vw; min-width: 50px; background-color: blue;}
-    10% {width:9vw; min-width: 120px; background-color: black;}
-    28% {width:9vw; min-width: 120px; background-color: black;}
+    10% {width:9vw; min-width: 120px; background-color: white;}
+    28% {width:9vw; min-width: 120px; background-color: white;}
     33%{ width:6vw; min-width: 50px; background-color: blue;}
-    38% {width:9vw; min-width: 120px; background-color: black;}
-    53% {width:9vw; min-width: 120px; background-color: black;}
+    38% {width:9vw; min-width: 120px; background-color: white;}
+    53% {width:9vw; min-width: 120px; background-color: white;}
     58%{ width:6vw; min-width: 50px; background-color: blue;}
-    63% {width:9vw; min-width: 120px; background-color: black;}
-    100% {width:9vw; min-width: 120px; background-color: black;}
+    63% {width:9vw; min-width: 120px; background-color: white;}
+    100% {width:9vw; min-width: 120px; background-color: white;}
 }
 
 @keyframes autoreveal4 {
     5%{ width:6vw; min-width: 50px; background-colored: green;}
-    10% {width:9vw; min-width: 120px; background-color: black;}
-    100% {width:9vw; min-width: 120px; background-color: black;}
+    10% {width:9vw; min-width: 120px; background-color: white;}
+    100% {width:9vw; min-width: 120px; background-color: white;}
 }
